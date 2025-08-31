@@ -1,0 +1,23 @@
+How to Embed in Google Sites
+================================
+
+Option A — Host the ZIP somewhere public (GitHub Pages, Netlify, itch.io static):
+1) Host the /dist/index.html at a public URL.
+2) In Google Sites → Insert → Embed → paste the URL → Insert.
+3) Resize the embed to a 16:9 rectangle. The game auto-scales and letterboxes.
+4) At runtime: click the screen to start audio; click canvas to capture mouse.
+
+Option B — Google Drive static hosting (works, but caching can be quirky):
+1) Upload /dist/index.html to Drive.
+2) Right-click → Share → Anyone with the link (Viewer).
+3) Open the file preview → three dots → Open in new window → again three dots →
+   Embed item → Copy the iframe code.
+4) In Google Sites → Embed → Embed code → paste → Insert.
+
+Troubleshooting
+---------------
+• Can't look around? Click inside the game; some browsers require a user gesture
+  for pointer lock. If Sites forbids lock, you can still play (limited look).
+• No audio? You must click "Start" due to browser autoplay rules.
+• Black screen? Ensure JS modules load; if the CDN is blocked, vendor the files
+  locally (see README notes).

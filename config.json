@@ -1,0 +1,7 @@
+{
+  "difficulty": {
+    "hpMultiplier": 1.0,
+    "enemyHpMultiplier": 1.0,
+    "parryWindowMs": 150
+  }
+}
